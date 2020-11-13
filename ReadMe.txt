@@ -1,0 +1,1 @@
+Proiectul constă în monitorizarea programărilor în cadrul unei clinici.
