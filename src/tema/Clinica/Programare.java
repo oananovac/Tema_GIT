@@ -17,4 +17,8 @@ public class Programare {
 
     public Programare() {
     }
+
+    public void modificaStatus(String status) {
+        this.status = status;
+    }
 }
