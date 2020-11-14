@@ -8,10 +8,18 @@ public class Medic {
     private String Specialitate;
     private ArrayList<Programare> ListaProgramari;
 
-    public Medic(String numeMedic, String prenumeMedic, String specialitate, ArrayList<Programare> listaProgramari) {
+    public Medic(String numeMedic, String prenumeMedic, String specialitate) {
         NumeMedic = numeMedic;
         PrenumeMedic = prenumeMedic;
         Specialitate = specialitate;
-        ListaProgramari = listaProgramari;
+        ListaProgramari = new ArrayList<>();
+    }
+
+    public void adaugaProgramare(Programare p){
+        ListaProgramari.add(p);
+    }
+
+    public void modificareStatus(Programare p, String status){
+        p.modificaStatus(status);
     }
 }
