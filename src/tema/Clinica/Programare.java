@@ -6,11 +6,13 @@ public class Programare {
     private Pacient pacient;
     private DateFormat data;
     private String tip_serviciu;
+    private String status;
 
-    public Programare(Pacient pacient, DateFormat data, String tip_serviciu) {
+    public Programare(Pacient pacient, DateFormat data, String tip_serviciu ,String status) {
         this.pacient = pacient;
         this.data = data;
         this.tip_serviciu = tip_serviciu;
+        this.status = status;
     }
 
     public Programare() {
