@@ -1,11 +1,13 @@
 package tema.Clinica;
 import java.util.ArrayList;
 
-public class Clinica {
+class Clinica {
+
+    private static Clinica single_instance = null;
     private ArrayList<Medic> medici;
     private ArrayList<Pacient> pacienti;
 
-    public Clinica() {
+    private Clinica() {
         medici = new ArrayList<>();
         pacienti = new ArrayList<>();
     }
@@ -15,5 +17,13 @@ public class Clinica {
     }
 
     public void adaugarePacient( Pacient p ) { pacienti.add(p); }
+
+    public static Clinica getInstance(){
+        if (single_instance == null)
+            single_instance = new Clinica();
+
+        return single_instance;
+    }
+
 
 }
